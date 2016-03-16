@@ -539,7 +539,7 @@ for per in eachRec2:
 		# 	continue
 
 
-		htmlStr2 += "Latest: " + user2 + " " + tweet2 + "</br>"
+		#htmlStr2 += "Latest: " + user2 + " " + tweet2 + "</br>"
 
 		trndNo2 = 0
 		trend_list2 = "NA"
