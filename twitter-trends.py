@@ -446,6 +446,9 @@ for per in eachRec:
 			 				trend_list +=  trend["name"]
 			 				trend_list += ", "
 		 		trend_list = trend_list[:-2]
+		 		printable = set(string.printable)
+				trend_list = filter(lambda x: x in printable, trend_list)
+				trend_list = esub.substitute_html(trend_list)
 			except:
 				trndNo = 0
 				trend_list = "NA"
@@ -485,7 +488,7 @@ for per in eachRec2:
 		locStr2 = str(per[0])
 		# print locStr2
 		instStr2 = str(per[2])
-		frnds_list2 = str(per[3])
+		frnds_list2 = str(per[1])
 
 		htmlStr2 += "\'" + locStr2 + "\',"
 		htmlStr2 += instStr2 + ","
@@ -555,6 +558,9 @@ for per in eachRec2:
 		 				trend_list2 +=  trend2["name"]
 		 				trend_list2 += ", "
 		 		trend_list2 = trend_list2[:-2]
+		 		printable2 = set(string.printable)
+				trend_list2 = filter(lambda x: x in printable2, trend_list2)
+				trend_list2 = esub.substitute_html(trend_list2)
 			except:
 				trndNo2 = 0
 				trend_list2 = "NA"
@@ -596,7 +602,7 @@ for per in eachRec3:
 		locStr3 = str(per[0])
 		# print locStr3
 		instStr3 = str(per[2])
-		frnds_list3 = str(per[3])
+		frnds_list3 = str(per[1])
 
 		htmlStr3 += "\'" + locStr3 + "\',"
 		htmlStr3 += instStr3 + ","
@@ -666,6 +672,9 @@ for per in eachRec3:
 	 					trend_list3 +=  trend3["name"]
 	 					trend_list3 += ", "
 		 		trend_list3 = trend_list3[:-2]
+		 		printable3 = set(string.printable)
+				trend_list3 = filter(lambda x: x in printable5, trend_list3)
+				trend_list3 = esub.substitute_html(trend_list3)
 			except:
 				trndNo3 = 0
 				trend_list3 = "NA"
@@ -707,12 +716,12 @@ for per in eachRec4:
 		locStr4 = str(per[0])
 		# print locStr4
 		instStr4 = str(per[2])
-		frnds_list4 = str(per[3])
+		frnds_list4 = str(per[1])
 
 
 		htmlStr4 += "\'" + locStr4 + "\',"
 		htmlStr4 += instStr4 + ","
-		htmlStr4 += "\'InstaPosts: " + instStr4 + "</br>"
+		htmlStr4 += "\'#Friends: " + instStr4 + "</br>"
 		htmlStr4 += "Friends: " + frnds_list4 + "</br>"
 		
 
@@ -778,6 +787,9 @@ for per in eachRec4:
 						trend_list4 +=  trend4["name"]
 	 					trend_list4 += ", "
 		 		trend_list4 = trend_list4[:-2]
+		 		printable4 = set(string.printable)
+				trend_list4 = filter(lambda x: x in printable4, trend_list4)
+				trend_list4 = esub.substitute_html(trend_list4)
 			except:
 				trndNo4 = 0
 				trend_list4 = "NA"
@@ -819,7 +831,7 @@ for per in eachRec5:
 		locStr5 = str(per[0])
 		# print locStr5
 		instStr5 = str(per[2])
-		frnds_list5 = str(per[3])
+		frnds_list5 = str(per[1])
 
 		htmlStr5 += "\'" + locStr5 + "\',"
 		htmlStr5 += instStr5 + ","
@@ -888,6 +900,9 @@ for per in eachRec5:
 	 					trend_list5 +=  trend5["name"]
 	 					trend_list5 += ", "
 		 		trend_list5 = trend_list5[:-2]
+		 		printable5 = set(string.printable)
+				trend_list5 = filter(lambda x: x in printable5, trend_list5)
+				trend_list5 = esub.substitute_html(trend_list5)
 			except:
 				trndNo5 = 0
 				trend_list5 = "NA"
