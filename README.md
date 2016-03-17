@@ -4,4 +4,4 @@ In this assignment, our goal is to help users easily care for their friends by k
 
 [Explanation Report](https://docs.google.com/document/d/1q3BFsJH-1Cz_91XxCL3S2DhNBggqC9ut3DsGdwqfKxA/edit?usp=sharing)
 
-[Demo](http://bc55phoenix.github.io/cm1/)
+[Demo](http://bc55phoenix.github.io/cm1/) - Click on the first tab (Kartik) to get it working!
