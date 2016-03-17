@@ -479,8 +479,6 @@ htmlStr = htmlStr[:-1]
 print htmlStr
 time.sleep(1200)
 
-client2 = yweather.Client()
-
 for per in eachRec2:
 
 		htmlStr2 += "["
@@ -496,13 +494,13 @@ for per in eachRec2:
 		htmlStr2 += "Friends: " + frnds_list2 + "</br>"
 		
 
-		loc_id2 = client2.fetch_woeid(locStr2)
+		loc_id2 = client.fetch_woeid(locStr2)
 		if loc_id2 is not None:
 			loc_id_int2 = int(loc_id2)
 		else:
 			loc_id_int2 = 0
 
-		loc_weather2 = client2.fetch_weather(str(loc_id_int2))
+		loc_weather2 = client.fetch_weather(str(loc_id_int2))
 
 		if (loc_weather2 is not None) and (loc_id_int2 != 0):
 			atmPr2 = str(loc_weather2["atmosphere"]["pressure"])
@@ -593,8 +591,6 @@ htmlStr2 = htmlStr2[:-1]
 print htmlStr2
 time.sleep(1200)
 
-client3 = yweather.Client()
-
 for per in eachRec3:
 
 		htmlStr3 += "["
@@ -610,13 +606,13 @@ for per in eachRec3:
 		htmlStr3 += "Friends: " + frnds_list3 + "</br>"
 		
 
-		loc_id3 = client3.fetch_woeid(locStr3)
+		loc_id3 = client.fetch_woeid(locStr3)
 		if loc_id3 is not None:
 			loc_id_int3 = int(loc_id3)
 		else:
 			loc_id_int3 = 0
 
-		loc_weather3 = client3.fetch_weather(str(loc_id_int3))
+		loc_weather3 = client.fetch_weather(str(loc_id_int3))
 
 		if (loc_weather3 is not None) and (loc_id_int3 != 0):
 			atmPr3 = str(loc_weather3["atmosphere"]["pressure"])
@@ -707,8 +703,6 @@ htmlStr3 = htmlStr3[:-1]
 print htmlStr3
 time.sleep(1200)
 
-
-client4 = yweather.Client()
 for per in eachRec4:
 
 		htmlStr4 += "["
@@ -725,13 +719,13 @@ for per in eachRec4:
 		htmlStr4 += "Friends: " + frnds_list4 + "</br>"
 		
 
-		loc_id4 = client4.fetch_woeid(locStr4)
+		loc_id4 = client.fetch_woeid(locStr4)
 		if loc_id4 is not None:
 			loc_id_int4 = int(loc_id4)
 		else:
 			loc_id_int4 = 0
 
-		loc_weather4 = client4.fetch_weather(str(loc_id_int4))
+		loc_weather4 = client.fetch_weather(str(loc_id_int4))
 
 		if (loc_weather4 is not None) and (loc_id_int4 != 0):
 			atmPr4 = str(loc_weather4["atmosphere"]["pressure"])
@@ -822,8 +816,6 @@ htmlStr4 = htmlStr4[:-1]
 print htmlStr4
 time.sleep(1200)
 
-client5 = yweather.Client()
-
 for per in eachRec5:
 
 		htmlStr5 += "["
@@ -838,13 +830,13 @@ for per in eachRec5:
 		htmlStr5 += "\'#Friends: " + instStr5 + "</br>"
 		htmlStr5 += "Friends: " + frnds_list5 + "</br>"
 
-		loc_id5 = client5.fetch_woeid(locStr5)
+		loc_id5 = client.fetch_woeid(locStr5)
 		if loc_id5 is not None:
 			loc_id_int5 = int(loc_id5)
 		else:
 			loc_id_int5 = 0
 
-		loc_weather5 = client5.fetch_weather(str(loc_id_int5))
+		loc_weather5 = client.fetch_weather(str(loc_id_int5))
 
 		if (loc_weather5 is not None) and (loc_id_int5 != 0):
 			atmPr5 = str(loc_weather5["atmosphere"]["pressure"])
