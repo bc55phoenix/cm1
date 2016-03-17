@@ -1,2 +1,2 @@
 # cm1
-IntroCM assnm1
+IntroCM Assignmment 1
